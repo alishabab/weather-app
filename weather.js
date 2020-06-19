@@ -14,9 +14,9 @@ const waetherDiv = document.querySelector("#weather")
         waetherDiv.innerHTML = `<h3>${response.name}, ${response.sys.country}</h3>
         <img src="http://openweathermap.org/img/wn/${response.weather[0].icon}@2x.png"> <br>
         Description: ${response.weather[0].description} <br>
-        Current Temp: ${fToC(response.main.temp)} <br>
-        Min Temp: ${fToC(response.main.temp_min)} <br>
-        Max Temp: ${fToC(response.main.temp_max)}` 
+        Current Temp: ${fToC(response.main.temp)} °C <br>
+        Min Temp: ${fToC(response.main.temp_min)} °C <br>
+        Max Temp: ${fToC(response.main.temp_max)} °C ` 
         
       })
       .catch((err) => { 

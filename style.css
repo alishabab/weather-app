@@ -2,4 +2,43 @@ body {
   background-image: url('./pexels-photo-209831.jpeg');
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+}
+.form-field {
+  margin: auto;
+  width: 70%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#weather {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+#btn {
+  padding: 5px 20px;
+  background-color: lightgreen;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#btn:hover {
+  background-color: green;
+}
+
+@media(max-width:720px) {
+  #weather {
+    flex-direction: column;
+  }
 }
