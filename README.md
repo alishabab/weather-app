@@ -15,7 +15,7 @@ App uses javascript Fetch API to make asynchronous GET request to OpenWeatherMap
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/alishabab/weather-app/development/index.html)
+[Live Demo Link](http://raw.githack.com/alishabab/weather-app/development/index.html)
 
 ## Getting Started
 
