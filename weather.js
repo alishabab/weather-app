@@ -1,7 +1,7 @@
 const city = document.querySelector("#city")
 const btn = document.querySelector("#btn")
 const waetherDiv = document.querySelector("#weather")
-    const getUsers = () => {
+    const getWeather = () => {
       fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city.value}&appid=a6fffd615dee8a18a1d160f3eead85a3`)
       .then( (response) => {
         if (response.ok){
@@ -27,4 +27,4 @@ const waetherDiv = document.querySelector("#weather")
     const fToC = (f) => {
       return (f-273.15).toFixed(2)
     }
-    btn.addEventListener('click',getUsers)
+    btn.addEventListener('click',getWeather)
