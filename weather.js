@@ -14,9 +14,9 @@ const waetherDiv = document.querySelector("#weather")
         waetherDiv.innerHTML = `<h3>${response.name}, ${response.sys.country}</h3>
         <img src="http://openweathermap.org/img/wn/${response.weather[0].icon}@2x.png"> <br>
         Description: ${response.weather[0].description} <br>
-        Current Temp: ${fToC(response.main.temp)} °C <br>
-        Min Temp: ${fToC(response.main.temp_min)} °C <br>
-        Max Temp: ${fToC(response.main.temp_max)} °C ` 
+        Current Temp: ${kToC(response.main.temp)} °C <br>
+        Min Temp: ${kToC(response.main.temp_min)} °C <br>
+        Max Temp: ${kToC(response.main.temp_max)} °C ` 
         
       })
       .catch((err) => { 
@@ -24,7 +24,7 @@ const waetherDiv = document.querySelector("#weather")
       })
     }
 
-    const fToC = (f) => {
-      return (f-273.15).toFixed(2)
+    const kToC = (k) => {
+      return (k-273.15).toFixed(2)
     }
     btn.addEventListener('click',getWeather)
