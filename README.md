@@ -8,8 +8,8 @@ App uses javascript Fetch API to make asynchronous GET request to OpenWeatherMap
 
 ## Built With
 
-- HTML,
-- CSS,
+- HTML
+- CSS
 - JavaScript
 - OpenWeatherMap API
 
