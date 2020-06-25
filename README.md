@@ -30,6 +30,11 @@ You should have installed git on your local machine and a text editor preferably
 - Clone the repository into your local machine.
 - Open index.html
 
+## Potential Future Features
+- To make the UI more intutive.
+- Weather condition in next few days in searched city.
+- Asynchronusly fetching the matching city names while typing in input box.
+
 ## Authors
 
 👤 **Author**
